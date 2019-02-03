@@ -1,9 +1,9 @@
 # Scala Best Practices by Loïc Knuchel
-(meaning their are my personal ones)
+(meaning their are my personal ones, not community ones)
 
 I believe there is 3 very different groups in the Scala community:
-- **OOP puristes**: mostly coming from OOP languages and use Scala as a better OOP language
-- **FP minimalists**:
+- **OOP puristes**: coming from OOP languages and use Scala as a better OOP language
+- **FP minimalists**: sold to FP but want to keep code
 - **FP purists**:
 
 Codes used in this guide:
@@ -14,18 +14,22 @@ Codes used in this guide:
 ## Table of contents
 
 1. Preface
-    - [MUST] Do not take theses rules as is, you should understand them and adapt them to the context (team, project, legacy...)
+    - [MUST] Do not take theses rules as is, you should understand and adapt them to your context
 1. General
     - [PREFER] Code comments should explain WHY the code has been done this way, not HOW it does it
     - [MUST] Names should be meaningful
 1. Language
 1. FP
+    - [MUST] Functions should be total
+    - [PREFER] Functions should be pure
 1. Architecture
     - **[MUST] Split technical and business code**
+    - **[[MUST] Encode business rules in types as much as possible](guidelines/artchitecture/encode-business-rules-in-types-as-much-as-possible.md)**
     - [MUST] Avoid building invalid objects
     - [MUST] Avoid temporal coupling
 1. Performance
     - [MUST] Performance should not be discussed without a benchmark highlighting the problem and the metrics that must be reached
+1. Play framework
 1. Syntax
     - [PREFER] Functions should have less than 20 lines, less than 10 is better, more than 50 is not acceptable
     - [PREFER] Lines should be less than 120 chars, more than 160 is not acceptable
